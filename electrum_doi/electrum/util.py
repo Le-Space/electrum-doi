@@ -695,18 +695,8 @@ def time_difference(distance_in_time, include_seconds):
         return "over %d years" % (round(distance_in_minutes / 525600))
 
 mainnet_block_explorers = {
-    'Cyphrs.com': ('https://namecoin.cyphrs.com/',
-                        {'tx': 'tx/', 'addr': 'address/'}),
-    'Namecha.in (non-libre; wiretapped by Cloudflare; discriminates against Tor)': ('https://namecha.in/',
-                        {'tx': 'tx/', 'addr': 'address/'}),
-    'Bchain.info (non-libre; no name support)': ('https://bchain.info/DOI/',
-                        {'tx': 'tx/', 'addr': 'addr/'}),
-    'BitInfoCharts.com (non-libre; wiretapped by Cloudflare; discriminates against Tor; no name support)': ('https://bitinfocharts.com/namecoin/',
-                        {'tx': 'tx/', 'addr': 'address/'}),
-    'mynode.local': ('http://mynode.local:3002/',
-                        {'tx': 'tx/', 'addr': 'address/'}),
-    'system default': ('blockchain:/',
-                        {'tx': 'tx/', 'addr': 'address/'}),
+        'Doichain Explorer': ('https://explorer.doichain.org/',
+                        {'tx': 'tx/', 'addr': 'address/'})
 }
 
 testnet_block_explorers = {
