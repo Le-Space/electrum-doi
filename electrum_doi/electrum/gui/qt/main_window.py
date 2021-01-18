@@ -210,8 +210,8 @@ class ElectrumWindow(QMainWindow, MessageBoxMixin, Logger):
         tabs.addTab(self.create_history_tab(), read_QIcon("tab_history.png"), _('History'))
         tabs.addTab(self.send_tab, read_QIcon("tab_send.png"), _('Send'))
         tabs.addTab(self.receive_tab, read_QIcon("tab_receive.png"), _('Receive'))
-        tabs.addTab(self.buy_names_tab, read_QIcon("namecoin-logo.png"), _('Buy Names'))
-        tabs.addTab(self.names_tab, read_QIcon("namecoin-logo.png"), _('Manage Names'))
+#        tabs.addTab(self.buy_names_tab, read_QIcon("namecoin-logo.png"), _('Buy Names'))
+        tabs.addTab(self.names_tab, read_QIcon("doichain-logo.png"), _('Manage DOIs'))
 
         def add_optional_tab(tabs, tab, icon, description, name):
             tab.tab_icon = icon
