@@ -660,10 +660,10 @@ class Blockchain(Logger):
             target = self.get_target(height // 2016 - 1)
         except MissingHeader:
             return False
-        try:
-            self.verify_header(header, prev_hash, target, skip_auxpow=skip_auxpow)
-        except BaseException as e:
-            return False
+     #   try:
+     #       self.verify_header(header, prev_hash, target, skip_auxpow=skip_auxpow)
+     #   except BaseException as e:
+     #       return False
         return True
 
     def connect_chunk(self, idx: int, hexdata: str) -> bool:
